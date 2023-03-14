@@ -1,4 +1,5 @@
 # RecyclerView
-<style width="50dp" height="100dp">
-![WhatsApp Image 2023-03-13 at 21 54 17](https://user-images.githubusercontent.com/102183014/224864807-5a2d341d-381e-4ca0-9f1f-10b045d5c858.jpeg)
-</style>
+
+
+
+![WhatsApp Image 2023-03-13 at 21 54 17](https://user-images.githubusercontent.com/102183014/224865578-5e8e16b9-1418-416f-bad8-71f6da05cb55.jpeg)
