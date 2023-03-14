@@ -1,6 +1,6 @@
 package com.example.ciclodevida.model
 
-data class Email  (
+data class Email(
     val user: String,
     val subject: String,
     val preview: String,
@@ -23,10 +23,11 @@ class emailBuilder {
 
 fun email(block: emailBuilder.() -> Unit): Email = emailBuilder().apply(block).build()
 
-fun fakeEmail():MutableList<Email> = mutableListOf(
+fun fakeEmail(): MutableList<Email> = mutableListOf(
     email {
         user = "Davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -40,33 +41,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
+        unread = true
+    },
+    email {
         user = "Davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
-        stared = false
-    },
-    email {
-        user = "LinkedIn.com"
-        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
-        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
-        date = "09 mar"
-        stared = false
-    },
-    email {
-        user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
-        date = "09 mar"
-        stared = false
-    },    email {
+        stared = true
+        unread = true
+    },email {
         user = "Davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -80,13 +73,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
-        user = "davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -100,13 +105,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
-        user = "davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -120,13 +137,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
-        user = "davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -140,13 +169,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
-        user = "davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -160,13 +201,25 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
-    },    email {
-        user = "davidwilliandd@outlook.com"
-        subject = "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
         preview = "Você reconhece este Email?"
         date = "09 mar"
         stared = false
@@ -180,11 +233,214 @@ fun fakeEmail():MutableList<Email> = mutableListOf(
     },
     email {
         user = "EquipeOutlook.com"
-        subject = "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
-        preview = "Olá David Willian de Lima, Você gosta desse site?"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
         date = "09 mar"
         stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
+    },email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "LinkedIn.com"
+        subject = "Seu emprego dos sonhos se encontra aqui! Não esqueça da sua vitória!"
+        preview = "Olá David Willian, Você esta preparado para engressar na sua nova carreira??"
+        date = "09 mar"
+        stared = false
+    },
+    email {
+        user = "EquipeOutlook.com"
+        subject =
+            "Sua faculdade dos sonhos esta na PUC Paraná! Venha realizar seus sonhos com a gente!!"
+        preview = "Olá David Willian, Você gosta desse site?"
+        date = "09 mar"
+        stared = false
+        unread = true
+    },
+    email {
+        user = "Davidwilliandd@outlook.com"
+        subject =
+            "Me Contrate! Prometo que farei o possível para fazer todas as tarefas com êxito, mas na sua empresa eu serei com certeza!!!"
+        preview = "Você reconhece este Email?"
+        date = "09 mar"
+        stared = true
+        unread = true
     },
 
-)
+    )
 
