@@ -1,6 +1,6 @@
 # RecyclerView
 
-<h1>Aplicação feita com RecyclerView, adaptando a recycler e utilizando dados mocados para melhor visão de código.</h1>
+<h1>Aplicação feita com RecyclerView, adaptando e utilizando dados mocados para melhor visão de código.</h1>
 <br>
 <br>
 <br>
